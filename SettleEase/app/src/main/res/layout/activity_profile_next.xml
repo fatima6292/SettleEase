@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profile_bkg"
+    tools:context="com.profile_next">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="15dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="40dp">
+
+        <EditText
+            android:id="@+id/country"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edittext_bkg"
+            android:hint="Country"
+            android:paddingLeft="15dp"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/postal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/country"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/edittext_bkg"
+            android:hint="PoatalAddress"
+            android:paddingLeft="15dp"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/lang"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/postal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="160dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/edittext_bkg"
+            android:hint="Language"
+            android:paddingLeft="15dp"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/dob"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/lang"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="220dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/edittext_bkg"
+            android:hint="DOB"
+            android:paddingLeft="15dp"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/ocupation"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/dob"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="280dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/edittext_bkg"
+            android:hint="Occupation"
+            android:paddingLeft="15dp"
+            android:textColor="@color/black" />
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/occupation"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="340dp"
+            android:text="JOIN"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
